@@ -14,18 +14,26 @@ const Showcase = () => {
             <Col md={1}>
               <span className={styles.showcase__counter}>01/10</span>
             </Col>
-            <Col md={5}>
+            <Col xs={3} md={5}>
               <span className={styles.showcase__number}>1</span>
             </Col>
 
-            <Col md={6}>
+            <Col xs={9} md={6}>
               <h2 className={styles.showcase__artist}>Taylor Swift</h2>
             </Col>
           </Row>
           <Row paddingBottom={2} paddingTop={2}>
-            <Col md={1}>Controls</Col>
+            <Col md={1}>
+              <Row justifyContent="space-between">
+                <button>Prev</button>
+                <button>Next</button>
+              </Row>
+            </Col>
             <Col md={5}>Latest releases</Col>
-            <Col md={6}>Call to action buttons</Col>
+            <Col md={6}>
+              <button>Watch music video</button>
+              <button>View artist page</button>
+            </Col>
           </Row>
         </Container>
       </div>
